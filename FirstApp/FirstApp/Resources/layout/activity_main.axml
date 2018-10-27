@@ -50,5 +50,20 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/textView2" />
+		<Button
+			android:text="To Second Activity"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/button4" />
+		<Button
+			android:text="webviewButton"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/button5" />
+		<Button
+			android:text="To List"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/button6" />
 	</LinearLayout>
 </RelativeLayout>

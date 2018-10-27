@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
+using Android.Content;
 
 namespace FirstApp
 {
@@ -25,6 +26,9 @@ namespace FirstApp
             var calculateButton = FindViewById<Button>(Resource.Id.button2);
             var minusButton = FindViewById<Button>(Resource.Id.button3);
             var answerTextView = FindViewById<TextView>(Resource.Id.textView2);
+            var toSecondActivity = FindViewById<Button>(Resource.Id.button4);
+            var toWebViewActivity = FindViewById<Button>(Resource.Id.button5);
+            var toListViewActivity = FindViewById<Button>(Resource.Id.button6);
 
 
 
@@ -49,6 +53,26 @@ namespace FirstApp
 
 
             };
+
+            toSecondActivity.Click += delegate
+            {
+                var secondActivity = new Intent(this, typeof(SecondActivity));
+                secondActivity.PutExtra("MyData", "Hello World!!!!!!!!!!!!");
+                StartActivity(secondActivity);
+            };
+
+            toWebViewActivity.Click += delegate
+            {
+                var webViewActivity = new Intent(this, typeof(WebViewActivity));
+                StartActivity(webViewActivity);
+            };
+
+            toListViewActivity.Click += delegate
+            {
+                var listViewActivity = new Intent(this, typeof(ListofThingsActivity));
+                StartActivity(listViewActivity);
+            };
+
 
         }
     }

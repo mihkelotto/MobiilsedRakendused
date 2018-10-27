@@ -1,3 +1,4 @@
 intel haxm hardware aceleration
 https://github.com/priitmat
 dp mitte px (48)
+microsoft xamarin
