@@ -2384,11 +2384,17 @@ namespace Calculator
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
-			// aapt resource value: 0x7F010006
-			public const int button2 = 2130771974;
+			// aapt resource value: 0x7F010008
+			public const int button1 = 2130771976;
+			
+			// aapt resource value: 0x7F010010
+			public const int button2 = 2130771984;
 			
 			// aapt resource value: 0x7F010005
 			public const int button3 = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int button4 = 2130771974;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2441,8 +2447,11 @@ namespace Calculator
 			// aapt resource value: 0x7F0C002B
 			public const int design_navigation_view = 2131492907;
 			
-			// aapt resource value: 0x7F010004
-			public const int editText1 = 2130771972;
+			// aapt resource value: 0x7F010007
+			public const int editText1 = 2130771975;
+			
+			// aapt resource value: 0x7F010003
+			public const int editText2 = 2130771971;
 			
 			// aapt resource value: 0x7F0C002C
 			public const int edit_query = 2131492908;
@@ -2506,6 +2515,9 @@ namespace Calculator
 			
 			// aapt resource value: 0x7F010002
 			public const int linearLayout1 = 2130771970;
+			
+			// aapt resource value: 0x7F010004
+			public const int linearLayout2 = 2130771972;
 			
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
@@ -2696,8 +2708,8 @@ namespace Calculator
 			// aapt resource value: 0x7F0C007C
 			public const int textSpacerNoTitle = 2131492988;
 			
-			// aapt resource value: 0x7F010003
-			public const int textView1 = 2130771971;
+			// aapt resource value: 0x7F010009
+			public const int textView2 = 2130771977;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;

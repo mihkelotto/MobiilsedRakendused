@@ -11,24 +11,54 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/linearLayout1">
-		<TextView
-			android:text="Large Text"
-			android:textAppearance="?android:attr/textAppearanceLarge"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/textView1" />
 		<EditText
 			android:inputType="numberDecimal"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/editText1" />
-		<Button
-			android:text="Button"
+			android:id="@+id/editText2"
+			android:hint="Esimene number" />
+		<LinearLayout
+			android:orientation="horizontal"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="47.0dp"
+			android:id="@+id/linearLayout2">
+			<Button
+				android:text="+"
+				android:textSize="40px"
+				android:layout_width="192.0dp"
+				android:layout_height="match_parent"
+				android:id="@+id/button3" />
+			<Button
+				android:text="-"
+				android:textSize="40px"
+				android:layout_width="192.0dp"
+				android:layout_height="match_parent"
+				android:id="@+id/button4" />
+		</LinearLayout>
+		<EditText
+			android:inputType="numberDecimal"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/button3" />
+			android:id="@+id/editText1"
+			android:hint="Teine number" />
 		<Button
-			android:text="Button"
+			android:text="="
+			android:textSize="100px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/button1" />
+		<TextView
+			android:text="Vastus: "
+			android:textSize="60px"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView2" />
+		<Button
+			android:text="C"
+			android:textSize="60px"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/button2" />
