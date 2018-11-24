@@ -460,20 +460,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mihkel\\.nuget\\packages\\": {}
+    "C:\\Users\\opilane\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mihkel\\Desktop\\Git\\MobiilsedRakendused\\FirstApp\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\Documents\\GitHub\\MobiilsedRakendused\\FirstApp\\Calculator\\Calculator.csproj",
       "projectName": "Calculator",
-      "projectPath": "C:\\Users\\Mihkel\\Desktop\\Git\\MobiilsedRakendused\\FirstApp\\Calculator\\Calculator.csproj",
-      "packagesPath": "C:\\Users\\Mihkel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mihkel\\Desktop\\Git\\MobiilsedRakendused\\FirstApp\\Calculator\\obj\\",
+      "projectPath": "C:\\Users\\opilane\\Documents\\GitHub\\MobiilsedRakendused\\FirstApp\\Calculator\\Calculator.csproj",
+      "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\opilane\\Documents\\GitHub\\MobiilsedRakendused\\FirstApp\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Mihkel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

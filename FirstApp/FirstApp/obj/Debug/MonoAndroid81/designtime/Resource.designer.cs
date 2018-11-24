@@ -2459,6 +2459,9 @@ namespace FirstApp
 			// aapt resource value: 0x7F010005
 			public const int editText2 = 2130771973;
 			
+			// aapt resource value: 0x7F010017
+			public const int editText3 = 2130771991;
+			
 			// aapt resource value: 0x7F0C002C
 			public const int edit_query = 2131492908;
 			
@@ -2498,6 +2501,9 @@ namespace FirstApp
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
+			// aapt resource value: 0x7F010013
+			public const int imageView1 = 2130771987;
+			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
 			
@@ -2506,6 +2512,9 @@ namespace FirstApp
 			
 			// aapt resource value: 0x7F0C003B
 			public const int item_touch_helper_previous_elevation = 2131492923;
+			
+			// aapt resource value: 0x7F010014
+			public const int kwTextView = 2130771988;
 			
 			// aapt resource value: 0x7F0C003C
 			public const int largeLabel = 2131492924;
@@ -2525,8 +2534,8 @@ namespace FirstApp
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
 			
-			// aapt resource value: 0x7F010013
-			public const int listView1 = 2130771987;
+			// aapt resource value: 0x7F010018
+			public const int listView1 = 2130771992;
 			
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
@@ -2543,8 +2552,14 @@ namespace FirstApp
 			// aapt resource value: 0x7F0C0045
 			public const int mini = 2131492933;
 			
+			// aapt resource value: 0x7F010016
+			public const int modelTextView = 2130771990;
+			
 			// aapt resource value: 0x7F0C0046
 			public const int multiply = 2131492934;
+			
+			// aapt resource value: 0x7F010015
+			public const int nameTextView = 2130771989;
 			
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
@@ -2771,8 +2786,8 @@ namespace FirstApp
 			// aapt resource value: 0x7F0C008F
 			public const int visible = 2131493007;
 			
-			// aapt resource value: 0x7F010014
-			public const int webView1 = 2130771988;
+			// aapt resource value: 0x7F010019
+			public const int webView1 = 2130771993;
 			
 			// aapt resource value: 0x7F0C0090
 			public const int wrap_content = 2131493008;
@@ -2914,6 +2929,9 @@ namespace FirstApp
 			// aapt resource value: 0x7F020002
 			public const int activity_main = 2130837506;
 			
+			// aapt resource value: 0x7F020003
+			public const int customrow_layout = 2130837507;
+			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
 			
@@ -2956,8 +2974,8 @@ namespace FirstApp
 			// aapt resource value: 0x7F0F0028
 			public const int design_text_input_password_icon = 2131689512;
 			
-			// aapt resource value: 0x7F020003
-			public const int list_layout = 2130837507;
+			// aapt resource value: 0x7F020004
+			public const int list_layout = 2130837508;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;
@@ -3004,8 +3022,8 @@ namespace FirstApp
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
 			
-			// aapt resource value: 0x7F020004
-			public const int second_layout = 2130837508;
+			// aapt resource value: 0x7F020005
+			public const int second_layout = 2130837509;
 			
 			// aapt resource value: 0x7F0F0038
 			public const int select_dialog_item_material = 2131689528;
@@ -3022,8 +3040,8 @@ namespace FirstApp
 			// aapt resource value: 0x7F0F003C
 			public const int tooltip = 2131689532;
 			
-			// aapt resource value: 0x7F020005
-			public const int webviewlayout = 2130837509;
+			// aapt resource value: 0x7F020006
+			public const int webviewlayout = 2130837510;
 			
 			static Layout()
 			{

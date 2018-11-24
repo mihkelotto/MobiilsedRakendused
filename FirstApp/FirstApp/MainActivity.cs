@@ -69,7 +69,7 @@ namespace FirstApp
 
             toListViewActivity.Click += delegate
             {
-                var listViewActivity = new Intent(this, typeof(ListofThingsActivity));
+                var listViewActivity = new Intent(this, typeof(ListOfThingsActivity));
                 StartActivity(listViewActivity);
             };
 

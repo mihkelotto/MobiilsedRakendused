@@ -1,7 +1,7 @@
 package md514c39be4e1fa42a2a8eb0a2775714b9a;
 
 
-public class ListofThingsActivity
+public class ListOfThingsActivity
 	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
@@ -12,15 +12,15 @@ public class ListofThingsActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("FirstApp.ListofThingsActivity, FirstApp", ListofThingsActivity.class, __md_methods);
+		mono.android.Runtime.register ("FirstApp.ListOfThingsActivity, FirstApp", ListOfThingsActivity.class, __md_methods);
 	}
 
 
-	public ListofThingsActivity ()
+	public ListOfThingsActivity ()
 	{
 		super ();
-		if (getClass () == ListofThingsActivity.class)
-			mono.android.TypeManager.Activate ("FirstApp.ListofThingsActivity, FirstApp", "", this, new java.lang.Object[] {  });
+		if (getClass () == ListOfThingsActivity.class)
+			mono.android.TypeManager.Activate ("FirstApp.ListOfThingsActivity, FirstApp", "", this, new java.lang.Object[] {  });
 	}
 
 

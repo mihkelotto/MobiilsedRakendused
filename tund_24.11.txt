@@ -1,0 +1,5 @@
+märkmete lisamise rakendus
+kustutada
+lisada
+
+sq-lite-psl
