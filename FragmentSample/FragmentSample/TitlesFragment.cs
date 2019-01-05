@@ -16,6 +16,7 @@ namespace FragmentSample
     public class TitlesFragment : ListFragment
     {
         int selectedPlayId;
+        bool showingTwoFragments;
 
         public TitlesFragment()
         {
@@ -25,11 +26,22 @@ namespace FragmentSample
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
             base.OnActivityCreated(savedInstanceState);
-            ListAdapter = new ArrayAdapter<String>(Activity, Android.Resource.Layout.SimpleListItemActivated1, Shakespeare.Titles);
+            ListAdapter = new ArrayAdapter<string>(Activity,
+                Android.Resource.Layout.SimpleListItemActivated1, Shakespeare.Titles);
 
-            if (savedInstanceState != null)
+            if(savedInstanceState != null)
             {
                 selectedPlayId = savedInstanceState.GetInt("current_play_id", 0);
+            }
+
+            var quoteContainer = Activity.FindViewById(Resource.Id.playquote_container);
+            showingTwoFragments = quoteContainer != null && 
+                quoteContainer.Visibility == ViewStates.Visible;
+
+            if (showingTwoFragments)
+            {
+                ListView.ChoiceMode = ChoiceMode.Single;
+                ShowPlayQuote(selectedPlayId);
             }
         }
 
@@ -44,16 +56,46 @@ namespace FragmentSample
             ShowPlayQuote(position);
         }
 
-        void ShowPlayQuote(int playId)
+        private void ShowPlayQuote(int playId)
         {
-            var intent = new Intent(Activity, typeof(PlayQuoteActivity));
-            intent.PutExtra("current_play_id", playId);
-            StartActivity(intent);
+            selectedPlayId = playId;
+            if(showingTwoFragments)
+            {
+                ListView.SetItemChecked(selectedPlayId, true);
+                var playQuoteFragment = FragmentManager.FindFragmentById(Resource.Id.playquote_container)
+                    as PlayQuoteFragment;
+
+                if(playQuoteFragment == null || playQuoteFragment.PlayId != playId)
+                {
+                    var container = Activity.FindViewById(Resource.Id.playquote_container);
+                    var quoteFrag = PlayQuoteFragment.NewInstance(selectedPlayId);
+
+                    FragmentTransaction ft = FragmentManager.BeginTransaction();
+                    ft.Replace(Resource.Id.playquote_container, quoteFrag);
+                    ft.Commit();
+                }
+            }
+            else
+            {
+                var intent = new Intent(Activity, typeof(PlayQuoteActivity));
+                intent.PutExtra("current_play_id", playId);
+                StartActivity(intent);
+            }           
         }
 
-        /*protected override void OnCreate(Bundle savedInstanceState)
+        public override void OnCreate(Bundle savedInstanceState)
         {
+            base.OnCreate(savedInstanceState);
 
-        }*/
+            // Create your fragment here
         }
+
+        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+        {
+            // Use this to return your custom view for this Fragment
+            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
+
+            return base.OnCreateView(inflater, container, savedInstanceState);
+        }
+    }
 }

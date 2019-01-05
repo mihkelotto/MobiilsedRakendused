@@ -480,11 +480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\Desktop\\MobiilsedRakendused-master\\FragmentSample\\FragmentSample\\FragmentSample.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\Documents\\MobiilsedRakendused\\FragmentSample\\FragmentSample\\FragmentSample.csproj",
       "projectName": "FragmentSample",
-      "projectPath": "C:\\Users\\opilane\\Desktop\\MobiilsedRakendused-master\\FragmentSample\\FragmentSample\\FragmentSample.csproj",
+      "projectPath": "C:\\Users\\opilane\\Documents\\MobiilsedRakendused\\FragmentSample\\FragmentSample\\FragmentSample.csproj",
       "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\Desktop\\MobiilsedRakendused-master\\FragmentSample\\FragmentSample\\obj\\",
+      "outputPath": "C:\\Users\\opilane\\Documents\\MobiilsedRakendused\\FragmentSample\\FragmentSample\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

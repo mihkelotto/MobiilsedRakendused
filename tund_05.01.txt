@@ -1,0 +1,3 @@
+märkmerakendus fragmendi süsteemiga
+märkmed vasakul
+märkme sisu paremal

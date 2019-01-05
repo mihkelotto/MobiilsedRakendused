@@ -2546,6 +2546,9 @@ namespace FragmentSample
 			// aapt resource value: 0x7F0C0050
 			public const int pin = 2131492944;
 			
+			// aapt resource value: 0x7F010004
+			public const int playquote_container = 2130771972;
+			
 			// aapt resource value: 0x7F0C0051
 			public const int progress_circular = 2131492945;
 			
@@ -2725,6 +2728,9 @@ namespace FragmentSample
 			
 			// aapt resource value: 0x7F0C008B
 			public const int transition_transform = 2131493003;
+			
+			// aapt resource value: 0x7F010003
+			public const int two_fragments_layout = 2130771971;
 			
 			// aapt resource value: 0x7F0C008C
 			public const int uniform = 2131493004;
