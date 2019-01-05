@@ -19,10 +19,12 @@ namespace FirstApp
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.webviewlayout);
+
+            SetContentView(Resource.Layout.webview_layout);
             // Create your application here
+
             var webView = FindViewById<WebView>(Resource.Id.webView1);
-            webView.LoadUrl("http://www.google.ee");
+            webView.LoadUrl("http://www.google.com");
         }
     }
 }

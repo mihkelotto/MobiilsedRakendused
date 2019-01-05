@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -21,9 +20,8 @@ namespace FirstApp
             SetContentView(Resource.Layout.second_layout);
             // Create your application here
             var textView = FindViewById<TextView>(Resource.Id.textView1);
-            var mytext = Intent.GetStringExtra("MyData") ?? "Data not availebale" ;
+            var mytext = Intent.GetStringExtra("MyData") ?? "Data not available";
             textView.Text = mytext;
-
         }
     }
 }

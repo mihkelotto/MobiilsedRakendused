@@ -22,7 +22,7 @@ namespace FirstApp
         {
             this.context = context;
             this.items = items;
-        }
+        }      
 
         public override int Count
         {
@@ -41,14 +41,13 @@ namespace FirstApp
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            View view = convertView; // taaskasutame olemasolevat vaadet kui olemas
-            if (view == null)
-            {
+            View view = convertView; // taaskasutame olemasolevat vaadet(View) kui on olemas.
+            if (view == null) // kui ei ole loome uue            
                 view = context.LayoutInflater.Inflate(Resource.Layout.customrow_layout, null);
-            }
-            view.FindViewById<TextView>(Resource.Id.nameTextView).Text = items[position].Name;
-            view.FindViewById<TextView>(Resource.Id.modelTextView).Text = items[position].Model;
-            view.FindViewById<TextView>(Resource.Id.kwTextView).Text = items[position].Kw.ToString();
+            view.FindViewById<TextView>(Resource.Id.nametextview).Text = items[position].Name;
+            view.FindViewById<TextView>(Resource.Id.modeltextview).Text = items[position].Model;
+            view.FindViewById<TextView>(Resource.Id.kwtextview).Text = items[position].Kw.ToString();
+
             return view;
         }
     }

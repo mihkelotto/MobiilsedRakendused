@@ -15,7 +15,7 @@
 		android:text="Text"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:id="@+id/kwTextView" />
+		android:id="@+id/kwtextview" />
 	<LinearLayout
 		android:orientation="vertical"
 		android:minWidth="25px"
@@ -29,13 +29,13 @@
 			android:text="Text"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/nameTextView"
+			android:id="@+id/nametextview"
 			android:textAlignment="textEnd" 			 />
 		<TextView
 			android:text="Text"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/modelTextView"
+			android:id="@+id/modeltextview"
 			android:textAlignment="textEnd" />
 	</LinearLayout>
 

@@ -24,14 +24,10 @@ namespace FirstApp
             var number1TextView = FindViewById<EditText>(Resource.Id.editText1);
             var number2TextView = FindViewById<EditText>(Resource.Id.editText2);
             var calculateButton = FindViewById<Button>(Resource.Id.button2);
-            var minusButton = FindViewById<Button>(Resource.Id.button3);
             var answerTextView = FindViewById<TextView>(Resource.Id.textView2);
-            var toSecondActivity = FindViewById<Button>(Resource.Id.button4);
-            var toWebViewActivity = FindViewById<Button>(Resource.Id.button5);
-            var toListViewActivity = FindViewById<Button>(Resource.Id.button6);
-
-
-
+            var toSecondActivityButton = FindViewById<Button>(Resource.Id.button3);
+            var toWebviewActivityButton = FindViewById<Button>(Resource.Id.button4);
+            var toListviewActivityButton = FindViewById<Button>(Resource.Id.button5);
 
             firstButton.Click += delegate
             {
@@ -39,41 +35,44 @@ namespace FirstApp
                 firstTextView.Text = count.ToString();
             };
 
-           /* minusButton.Click += delegate
-            {
-
-            } */
-
             calculateButton.Click += delegate
             {
                 var num1 = int.Parse(number1TextView.Text);
                 var num2 = int.Parse(number2TextView.Text);
                 var answer = num1 + num2;
                 answerTextView.Text = answer.ToString();
-
-
             };
 
-            toSecondActivity.Click += delegate
+            toSecondActivityButton.Click += delegate
             {
                 var secondActivity = new Intent(this, typeof(SecondActivity));
                 secondActivity.PutExtra("MyData", "Hello World!!!!!!!!!!!!");
                 StartActivity(secondActivity);
             };
 
-            toWebViewActivity.Click += delegate
+            toWebviewActivityButton.Click += delegate
             {
-                var webViewActivity = new Intent(this, typeof(WebViewActivity));
+                var webViewActivity = new Intent(this, typeof(WebViewActivity));                
                 StartActivity(webViewActivity);
             };
 
-            toListViewActivity.Click += delegate
+            toListviewActivityButton.Click += delegate
             {
-                var listViewActivity = new Intent(this, typeof(ListOfThingsActivity));
-                StartActivity(listViewActivity);
+                var listActivity = new Intent(this, typeof(ListOfThingsActivity));
+                StartActivity(listActivity);
             };
+        }
 
+        protected override void OnResume()
+        {
+            base.OnResume();
+        }
 
+        protected override void OnPause()
+        {
+            base.OnPause();
         }
     }
+
+   
 }

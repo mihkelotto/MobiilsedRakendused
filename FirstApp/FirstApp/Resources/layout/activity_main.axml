@@ -9,7 +9,7 @@
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
+		android:layout_height="match_parent"
 		android:id="@+id/linearLayout1">
 		<TextView
 			android:text="Testime"
@@ -23,29 +23,22 @@
 			android:layout_height="wrap_content"
 			android:id="@+id/button1" />
 		<EditText
-			android:inputType="numberDecimal"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/editText2"
-			android:hint="Number1" />
-		<EditText
-			android:inputType="numberDecimal"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/editText1"
-			android:hint="Number2" />
-		<Button
-			android:text="Button"
+			android:hint="Number 1" />
+		<EditText
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/button3" />
+			android:id="@+id/editText2"
+			android:hint="Number 2" />
 		<Button
-			android:text="Button"
+			android:text="Calculate"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/button2" />
 		<TextView
-			android:text="Large Text"
+			android:text="Answer"
 			android:textAppearance="?android:attr/textAppearanceLarge"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -54,16 +47,16 @@
 			android:text="To Second Activity"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/button4" />
+			android:id="@+id/button3" />
 		<Button
-			android:text="webviewButton"
+			android:text="To webview activity"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/button5" />
+			android:id="@+id/button4" />
 		<Button
 			android:text="To List"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/button6" />
+			android:id="@+id/button5" />
 	</LinearLayout>
 </RelativeLayout>

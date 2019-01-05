@@ -26,21 +26,21 @@ namespace FirstApp
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.list_layout);
             // Create your application here
-            CreateDatabase();
+            CreateDatabase();          
             var listView = FindViewById<ListView>(Resource.Id.listView1);
             var nameEditText = FindViewById<EditText>(Resource.Id.editText1);
             var modelEditText = FindViewById<EditText>(Resource.Id.editText2);
             var kwEditText = FindViewById<EditText>(Resource.Id.editText3);
             var addButton = FindViewById<Button>(Resource.Id.button1);
-
+            
             var listOfCars = GetAllCarsFromDatabase();
 
             ListOfCars = listOfCars.ToList();
-            listView.Adapter = new CustomAdapter(this, ListOfCars);
+            listView.Adapter = new CustomAdapter(this, ListOfCars);         
 
             listView.ItemClick += (object sender, ItemClickEventArgs e) =>
-            {
-                Toast.MakeText(this, "Vajutasid", ToastLength.Short).Show();
+            {                
+                Toast.MakeText(this, "Vajutasid", ToastLength.Short).Show();                
             };
 
             addButton.Click += delegate
@@ -55,7 +55,7 @@ namespace FirstApp
 
             };
 
-
+            
         }
 
         public void SaveCarsToDatabase()
@@ -70,7 +70,7 @@ namespace FirstApp
         public TableQuery<Car> GetAllCarsFromDatabase()
         {
             //Andmebaasist välja küsimine
-            return db.Table<Car>();
+           return db.Table<Car>();            
         }
 
         public void CreateDatabase()
